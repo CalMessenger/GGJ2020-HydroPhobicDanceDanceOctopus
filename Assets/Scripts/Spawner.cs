@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
 
     // Will set each generated object to the initial starting postion of the Spawner object
     Vector3 currentPostion;
-
+    [SerializeField] GameObject world;
 
 
     // The wood to be spawned
@@ -34,6 +34,8 @@ public class Spawner : MonoBehaviour
     {
         GameObject setWoodPostion = PoolManager.GetObjectFromPool(listOfObj);
         setWoodPostion.transform.position = currentPostion;
+        setWoodPostion.transform.parent = world.transform;
+
         setWoodPostion.SetActive(true);
     }
 }

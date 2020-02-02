@@ -16,6 +16,8 @@ public class Ocotpus_Script : MonoBehaviour
     bool[] canGrab;
     [SerializeField]
     GameObject[] debris;
+    [SerializeField]
+    GameObject world;
 
 
     void Start()
@@ -107,6 +109,7 @@ public class Ocotpus_Script : MonoBehaviour
     public void DisableDebris(int debrisNo)
     {
         limbs[debrisNo].SetBool("Grab", false);
+        debris[debrisNo].transform.parent = world.transform;
 
         debris[debrisNo].SetActive(false);
         debris[debrisNo] = null;
