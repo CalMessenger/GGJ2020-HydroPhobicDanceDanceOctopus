@@ -114,5 +114,7 @@ public class Ocotpus_Script : MonoBehaviour
         debris[debrisNo].SetActive(false);
         debris[debrisNo] = null;
         canGrab[debrisNo] = false;
+        Bars.ChangeHealth(10);
+        Scoring.ChangeScore(100);
     }
 }
