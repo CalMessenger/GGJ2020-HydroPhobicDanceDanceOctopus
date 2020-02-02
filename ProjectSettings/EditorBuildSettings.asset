@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9a08fe85722241d41a3f883f915deddd
   - enabled: 1
     path: Assets/Scenes/MainScene_Jacob 2.unity
     guid: 178ea130195b67d48839a088f9b727ac
