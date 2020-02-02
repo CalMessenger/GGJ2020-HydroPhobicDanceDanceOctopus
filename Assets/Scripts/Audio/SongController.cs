@@ -20,8 +20,7 @@ public class SongController : MonoBehaviour
     [SerializeField] private GameObject m_Duration;
     public enum SongType
     {
-        Ouroboros,
-        NeverGonnaGiveYouUp
+        Ouroboros
     }
 
     void Awake()
