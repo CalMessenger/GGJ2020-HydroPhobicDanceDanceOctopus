@@ -8,7 +8,7 @@ public class Bars : MonoBehaviour
     float fuelTimer = 3.0f;
     public Slider healthSlider, fuelSlider;
 
-    static float health = 20, fuel = 20;
+    static float health = 50, fuel = 50;
 
     public static void ChangeFuel(float amount){
         fuel += amount;
