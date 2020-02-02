@@ -14,6 +14,10 @@ public class LaneTrigger : MonoBehaviour
         if(other.tag =="Plank"){
         OctoScript.DebrisLane(true, other.gameObject, LaneNo);
         }
+
+        if(other.tag =="JerryCan"){
+        OctoScript.DebrisLane(true, other.gameObject, LaneNo);
+        }
     }
 
     private void OnTriggerExit(Collider other)

@@ -94,7 +94,7 @@ public class Ocotpus_Script : MonoBehaviour
         {
         canGrab[LaneNo] = hasDebris;
         debris[LaneNo] = debrisGO;
-        Debug.Log("Can grab");
+        //Debug.Log("Can grab");
         }
     }
 
@@ -109,12 +109,25 @@ public class Ocotpus_Script : MonoBehaviour
     public void DisableDebris(int debrisNo)
     {
         limbs[debrisNo].SetBool("Grab", false);
-        debris[debrisNo].transform.parent = world.transform;
+        if(debris[debrisNo]!=null)
+        { debris[debrisNo].transform.parent = world.transform;
+        if (debris[debrisNo].name == "plank(Clone)")
+        { debris[debrisNo].tag = "Plank";
+            Bars.GetWoodBoard();
+        }
+        else if (debris[debrisNo].name == "jerrycan(Clone)")
+        {
+            debris[debrisNo].tag = "JerryCan";
+            Bars.GetFuelCan();
+            //Debug.Log("got fuel");
+        }
+
 
         debris[debrisNo].SetActive(false);
         debris[debrisNo] = null;
         canGrab[debrisNo] = false;
-        Bars.ChangeHealth(10);
-        Scoring.ChangeScore(100);
+        }
+        //Bars.ChangeHealth(10);
+        //Scoring.ChangeScore(100);
     }
 }

@@ -847,12 +847,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  Tentacle_01: 49
-  Tentacle_02: 50
-  Tentacle_03: 51
-  Tentacle_04: 52
-  Tentacle_05: 53
-  Tentacle_06: 54
+  Tentacle_01: 100
+  Tentacle_02: 106
+  Tentacle_03: 115
+  Tentacle_04: 107
+  Tentacle_05: 97
+  Tentacle_06: 108
   canGrab: 000000000000
   debris:
   - {fileID: 0}
@@ -861,6 +861,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  world: {fileID: 0}
 --- !u!1 &1458563888535819700
 GameObject:
   m_ObjectHideFlags: 0

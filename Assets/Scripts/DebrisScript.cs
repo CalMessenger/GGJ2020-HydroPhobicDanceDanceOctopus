@@ -12,7 +12,7 @@ public class DebrisScript : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.back * Time.deltaTime * speed, Space.World);
-        speed += 0.1f;
+        speed += 0.05f;
         if(speed > 300f)
         {
             speed -= 50f;

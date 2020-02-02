@@ -31,6 +31,9 @@ public class SongController : MonoBehaviour
 
     private void Update()
     {
+          m_Duration.GetComponent<Text>().text = "Duration: " + m_Songs[(int)m_SongSelection].m_SongLength;
+
+        m_SongName.GetComponent<Text>().text = "Song Name: " +  m_Songs[(int)m_SongSelection].m_SongName;
        // m_Ocean.GetComponent<LowPolyWater.LowPolyWater>().waveHeight = Mathf.Clamp(SpectrumGenerator.m_SpectrumData[0],0.0f,8.0f);
        if(m_SongSelection != m_PreviousSong)
        {
@@ -42,8 +45,10 @@ public class SongController : MonoBehaviour
             if (m_CountDown <= 0)
             {
                 ResetTimer();
-                System.Random rand = new System.Random();
-                m_Spawners[rand.Next(0, m_Spawners.Count)].GetComponent<Spawner>().Spawn();
+                //System.Random rand = new System.Random();
+                //m_Spawners[rand.Next(0, m_Spawners.Count)].GetComponent<Spawner>().Spawn();
+                m_Spawners[Random.Range(0, m_Spawners.Count)].GetComponent<Spawner>().Spawn();
+
             }
         }
         m_PreviousSong = m_SongSelection;

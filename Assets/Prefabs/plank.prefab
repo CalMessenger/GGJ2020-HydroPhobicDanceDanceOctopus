@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7186286681312186972}
   - component: {fileID: 7850944807602184257}
   - component: {fileID: 7877311948828431295}
-  - component: {fileID: -6965017055332701542}
   - component: {fileID: 1931477931873017851}
   - component: {fileID: -8429325138491681353}
   m_Layer: 0
@@ -90,29 +89,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7157391652709961730}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-6965017055332701542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7157391652709961730}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48cceeb2de7a0c54bb04f27e69b33e94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  waterLevel: 0
-  floatHeight: 0.05
-  bounceDamp: 0.71
-  BuoyancyCenterOffset: {x: 1, y: 0, z: 0}
-  forceFactor: 1
 --- !u!114 &1931477931873017851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aeb30be16ef8ce48b961e9570811f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
 --- !u!54 &-8429325138491681353
 Rigidbody:
   m_ObjectHideFlags: 0

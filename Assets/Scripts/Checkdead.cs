@@ -22,8 +22,9 @@ public class Checkdead : MonoBehaviour
 
        public void gotomainmenu()
         {
-            SceneManager.LoadScene("Menu");
-
+        GameState.gameState = GameState.State.Playing;
+        SceneManager.LoadScene("Menu");
+        
         }
 
 }

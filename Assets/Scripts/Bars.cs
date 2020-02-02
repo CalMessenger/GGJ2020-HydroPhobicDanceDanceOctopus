@@ -19,10 +19,12 @@ public class Bars : MonoBehaviour
     }
     public static void GetFuelCan(){
         ChangeFuel(10);
+        Scoring.ChangeScore(1000);
     }
 
     public static void GetWoodBoard(){
         ChangeHealth(10);
+        Scoring.ChangeScore(250);
     }
 
     /// <summary>
@@ -39,6 +41,16 @@ public class Bars : MonoBehaviour
             if(fuel <= 0)
                 GameState.gameState = GameState.State.Dead;
             Scoring.isScoreIncreasing = false;
+        }
+
+        if(health>=100)
+        {
+            health = 100;
+        }
+
+        if(fuel>=100)
+        {
+            fuel = 100;
         }
     }
 

@@ -20,8 +20,8 @@ public class nextscene : MonoBehaviour
     public void onclick()
 
     {
-
         SceneManager.LoadScene("MainScene_Jacob 2");
+        GameState.gameState = GameState.State.Playing;
     }
 
     public void exit()

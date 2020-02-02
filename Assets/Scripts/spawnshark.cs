@@ -32,7 +32,7 @@ public class spawnshark : MonoBehaviour
             if (timeLeft < 0)
             {
                 check = false;
-                timeLeft = 3f;
+                timeLeft = Random.Range(3, 9);
                 rand = (Random.Range(0, 5));
                 int rand2 = (Random.Range(0, 2));
                 if (rand2 == 1)
